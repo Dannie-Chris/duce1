@@ -434,16 +434,13 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-@media (min-width: 768px) {
-            .contact-wrapper {
-                grid-template-columns: repeat(2, 1fr);
+
             }
         @media (min-width: 1024px) {
             .contact-wrapper {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: 5fr 7fr);
             }
-                    /* grid-template-columns: repeat(3, 1fr);*/
-        }
+                           }
 .container {
             max-width: 1400px;
             margin: 0 auto;
