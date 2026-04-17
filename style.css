@@ -831,22 +831,25 @@
                     gap: 10px;
                 }
             }
-            @media(maxwidth:768px){
-                .menu-toggle{
-                    display: block;
-                    font-size: 24px;
-                    cursor: pointer;
-                }
-                .nav-links{
-                    display: none;
-                    flex-direction: column;
-                    background: #333;
-                    position: absolute;
-                    top: 60px;
-                    left: 0;
-                    width: 100%;
-                }
-                .nav-links,active{
-                    display: flex;
-                }
-            }
+           @media(max-width:768px){
+  .menu-toggle{
+    display: block;
+  }
+  .navbar{
+    flex-wrap: wrap;
+  }
+  #nav-links{
+    display: none;
+    width: 100px;
+    flex-direction: column;
+    background: white;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  #nav-links li{
+    text-align: center;
+    padding: 10px 0;
+  }
+  #nav-links.active{
+    display: flex;
+  }
