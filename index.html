@@ -16,7 +16,8 @@
             <div class="menu-toggle" onclick="toggleMenu()">
              ☰
             </div>
-            <nav>
+        </header>
+            
             <!-- Dropdown Menu -->
             <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
@@ -110,6 +111,10 @@
                 <p>&copy;2026 Duce Creatives. All Rights Reserved.</p>
             </div>                
         </footer>
-        <script src="script.js"></script>          
+        <script>
+            function toggleMenu(){
+                document.getElementById("navLinks").classList.toggle("active");
+            }
+        </script>         
     </body>
 </html>
