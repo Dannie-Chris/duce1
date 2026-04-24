@@ -61,12 +61,14 @@
                 background: rgba(255, 255, 255, 0.2).381).381).381).381).381).381);
             }
             .hero-overlay{
-                background:rgba(0,0,0,0.55);
-                backdrop-filter:blur(8px);
+                background:rgba(255,255,255,0.75);
+                backdrop-filter:blur(6px);
                 padding:40px 20px;
+                border-radius:20px;        
                 max-width:500px;
                 width:90%
                 text-align:center;
+                box-shadow:0 8px 25px rgba(0,0,0,0.15);        
             }            
             .hero-content{
                 position: relative;
