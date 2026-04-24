@@ -37,12 +37,9 @@
             .nav-links{
                 list-style:none;
                 background:#0b2c5f;
-                width:200px;
-                text-align:right;
-                display:none;
-                position:absolute;
-                top:70px;        
-                right:0;        
+                width:100%;
+                text-align:center;
+                display:none;        
                 padding:20px 0;
             }
             .nav-links li{
