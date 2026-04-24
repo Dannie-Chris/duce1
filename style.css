@@ -30,6 +30,29 @@
                 width: 40px;
                 height: auto;
             }
+            .menu-toggle{
+                font-size:28px;
+                cursor:pointer;
+            }
+            .nav-links{
+                list-style:none;
+                background:#0b2c5f;
+                width:100%
+                text-align:center;
+                display:none;
+                padding:20px 0;
+            }
+            .nav-links li{
+                margin:10px 0;
+            }
+            .nav-links li a{
+                color:white;
+                text-decoration:none;
+                font-size:16px;
+            }
+            .nav-links.active{
+                display:block;
+            }            
             .container{
                 padding: 0 50px;
             }
