@@ -14,13 +14,10 @@
     <span>DUCE CREATIVES</span>
   </div>
 
-  <!-- Dropdown replaces menu toggle -->
   <div class="dropdown">
-    <div class="menu-toggle dropbtn">
-      ☰ Menu
-    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
 
-    <ul class="dropdown-content">
+    <ul class="dropdown-content" id="dropdownMenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="About us.html">About Us</a></li>
@@ -114,7 +111,7 @@
         </footer>
         <script>
             function toggleMenu(){
-                document.getElementById("navLinks").classList.toggle("active");
+                document.getElementById("dropdownMenu").classList.toggle("show");
             }
         </script>         
     </body>
