@@ -198,9 +198,25 @@
   color: #222;
 }
 .services-section {
-  background: #050714;
   padding: 100px 7%;
-  color: white;
+  color: #fff;
+
+  /* Deep navy gradient */
+  background:
+    radial-gradient(circle at top left,
+      rgba(0, 174, 255, 0.15),
+      transparent 35%),
+    radial-gradient(circle at bottom right,
+      rgba(0, 89, 255, 0.15),
+      transparent 40%),
+    linear-gradient(
+      135deg,
+      #020814 0%,
+      #031633 45%,
+      #041e4d 100%
+    );
+
+  min-height: 100vh;
 }
 
 .services-header {
