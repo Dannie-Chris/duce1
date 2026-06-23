@@ -284,6 +284,54 @@
             function toggleMenu(){
                 document.getElementById("dropdownMenu").classList.toggle("show");
             }
-        </script>         
+        </script>
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const circles = document.querySelectorAll(".progress-circle");
+
+  circles.forEach(circle => {
+    const percent = parseInt(
+      circle.getAttribute("data-percent")
+    );
+
+    const progress =
+      circle.querySelector(".progress");
+
+    const number =
+      circle.querySelector(".number");
+
+    const radius = 70;
+    const circumference =
+      2 * Math.PI * radius;
+
+    progress.style.strokeDasharray =
+      circumference;
+
+    let count = 0;
+
+    const interval = setInterval(() => {
+
+      count++;
+
+      number.innerText = count + "%";
+
+      const offset =
+        circumference -
+        (count / 100) * circumference;
+
+      progress.style.strokeDashoffset =
+        offset;
+
+      if (count >= percent) {
+        clearInterval(interval);
+      }
+
+    }, 20);
+
+  });
+
+});
+</script>
     </body>
 </html>
