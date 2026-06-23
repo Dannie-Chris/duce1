@@ -136,6 +136,27 @@
   margin: auto;
   position: relative;
 }
+.progress-circle svg {
+  transform: rotate(-90deg);
+}
+
+.progress-circle .bg {
+  fill: none;
+  stroke: #d9d9d9;
+  stroke-width: 14;
+}
+
+.progress-circle .progress {
+  fill: none;
+  stroke: #0d8dff;
+  stroke-width: 14;
+  stroke-linecap: round;
+
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+
+  transition: stroke-dashoffset 1.5s ease;
+}
 
 .progress-circle svg {
   width: 180px;
