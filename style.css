@@ -176,6 +176,147 @@
   font-weight: 700;
   color: #222;
 }
+.services-section {
+  background: #050714;
+  padding: 100px 7%;
+  color: white;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.services-header h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(
+      90deg,
+      #22e7e7,
+      #0d8dff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-header p {
+  color: #9d9d9d;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.view-btn {
+  text-decoration: none;
+  color: white;
+  border: 2px solid #149eff;
+  padding: 16px 40px;
+  transition: .4s;
+}
+
+.view-btn:hover {
+  background: #149eff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.service-card {
+  background: #0a0d19;
+  padding: 60px 35px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 6px;
+  background: linear-gradient(
+      90deg,
+      #22e7e7,
+      #0d8dff
+  );
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+      0 20px 40px rgba(0,140,255,.15);
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  background: linear-gradient(
+      90deg,
+      #22e7e7,
+      #0d8dff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.service-card p {
+  color: #a7a7a7;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.arrow-btn {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #149eff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #149eff;
+  text-decoration: none;
+  margin-top: 35px;
+  transition: .4s;
+}
+
+.service-card:hover .arrow-btn {
+  background: #149eff;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h2 {
+    font-size: 3rem;
+  }
+}
             .container{
                 padding: 0 50px;
             }
