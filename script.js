@@ -2,49 +2,55 @@
   function toggleMenu(){
     document.getElementById("navLinks").classList.toggle("active");
   }
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
   const circles = document.querySelectorAll(".progress-circle");
 
-function animateSkills() {
   circles.forEach(circle => {
-    const progress = circle.querySelector(".progress");
-    const number = circle.querySelector(".number");
-    const target = parseInt(circle.dataset.percent);
+    const percent = parseInt(
+      circle.getAttribute("data-percent")
+    );
+
+    const progress =
+      circle.querySelector(".progress");
+
+    const number =
+      circle.querySelector(".number");
 
     const radius = 70;
-    const circumference = 2 * Math.PI * radius;
+    const circumference =
+      2 * Math.PI * radius;
 
-    progress.style.strokeDasharray = circumference;
+    progress.style.strokeDasharray =
+      circumference;
 
     let count = 0;
 
-    const timer = setInterval(() => {
-      if (count >= target) {
-        clearInterval(timer);
-      } else {
-        count++;
-      }
+    const interval = setInterval(() => {
 
-      number.textContent = count + "%";
+      count++;
+
+      number.innerText = count + "%";
 
       const offset =
-        circumference - (count / 100) * circumference;
+        circumference -
+        (count / 100) * circumference;
 
-      progress.style.strokeDashoffset = offset;
+      progress.style.strokeDashoffset =
+        offset;
+
+      if (count >= percent) {
+        clearInterval(interval);
+      }
+
     }, 20);
-  });
-}
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateSkills();
-      observer.disconnect();
-    }
   });
+
 });
-
-observer.observe(document.querySelector(".skills-section"));
-  </script>
+</script>
 <script>
 const cards = document.querySelectorAll(".service-card");
 
