@@ -227,8 +227,8 @@
 }
 
 .services-header h2 {
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 700;
   background: linear-gradient(
       90deg,
       #22e7e7,
@@ -264,7 +264,7 @@
 
 .service-card {
   background: #0a0d19;
-  padding: 60px 35px;
+  padding: 50px 35px;
   text-align: center;
   position: relative;
   overflow: hidden;
